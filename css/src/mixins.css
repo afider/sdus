@@ -1,0 +1,105 @@
+@define-mixin link_u $link-color, $link-color_hover {
+	border-bottom-color: color($link-color alpha($link-border-color_alpha));
+	color: $link-color;
+	&:hover,
+	&:focus {
+		border-bottom-color: color($link-color_hover alpha($link-border-color_alpha) !important);
+		color: $link-color_hover;
+	}
+}
+
+@define-mixin link_dotted {
+	cursor: pointer;
+	border-bottom-style: dotted;
+}
+
+@define-mixin link_dashed {
+	cursor: pointer;
+	border-bottom-style: dashed;
+}
+
+@define-mixin link_visited $link-color, $link-color_hover, $link-color_visited {
+	border-bottom-color: color($link-color alpha($link-border-color_alpha));
+	color: $link-color;
+	&:visited {
+		border-bottom-color: color($link-color_visited alpha($link-border-color_alpha));
+		color: $link-color_visited;
+	}
+	&:hover,
+	&:focus {
+		border-bottom-color: color($link-color_hover alpha($link-border-color_alpha));
+		color: $link-color_hover;
+	}
+}
+
+
+@define-mixin font-face $family, $file_name_r, $file_name_i, $file_name_b, $file_name_bi {
+
+	@font-face {
+		font-family: $family;
+		src: url('../../fonts/$(file_name_r).woff2') format('woff2'), 
+			 url('../../fonts/$(file_name_r).woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@if $file_name_b != false {
+
+		@font-face {
+			font-family: $family;
+			src: url('../../fonts/$(file_name_b).woff2') format('woff2'), 
+				 url('../../fonts/$(file_name_b).woff') format('woff');
+			font-weight: bold;
+			font-style: normal;
+		}
+		
+	}
+
+	@if $file_name_i != false {
+
+		@font-face {
+			font-family: $family;
+			src: url('../../fonts/$(file_name_i).woff2') format('woff2'), 
+				 url('../../fonts/$(file_name_i).woff') format('woff');
+			font-weight: normal;
+			font-style: italic;
+		}
+		
+	}
+
+	@if $file_name_bi != false {
+
+		@font-face {
+			font-family: $family;
+			src: url('../../fonts/$(file_name_bi).woff2') format('woff2'), 
+			 url('../../fonts/$(file_name_bi).woff') format('woff');
+			font-weight: bold;
+			font-style: italic;
+		}
+		
+	}
+}
+
+
+@define-mixin clearfix {
+	&::before,
+	&::after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+		
+	&::after {
+		clear: both;
+	}
+}
+
+
+@define-mixin center {
+	min-width: $page_w;
+	max-width: $page_w_max;
+	margin: auto;
+}
+
+
+

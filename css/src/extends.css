@@ -1,0 +1,11 @@
+@define-extend font-r {
+	font-family: $font_main;
+}
+
+@define-extend font-h {
+	font-family: 'PT Sans', $font_main;
+}
+
+
+
+	

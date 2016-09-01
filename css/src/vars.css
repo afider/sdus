@@ -1,0 +1,51 @@
+$animation-time: .3s;
+$animation-time_fast: .2s;
+$animation-time_slow: .5s;
+
+
+/* colors --- START --- */
+
+$main_color: #0288d1;
+$second_color: #fcc504;
+
+$focus_color: $second_color;
+
+$color_imp: #ff684a;
+$color_footer: #014366;
+$color_sidebar: #f9f9f9;
+
+$shadow_color: #000;
+$placeholder_color: #545454;
+
+$text_color: #666;
+$text_color_dark: #333;
+$text_color_light: #999;
+
+
+$selection_bg: #b3d4fc;
+
+$link-color: $main_color;
+$link-color_hover: #ff4081;
+$link-color_visited: #000;
+$link-border-color_alpha: 30%;
+
+$border_color: #b2b2b2;
+
+/* colors --- END --- */
+
+
+$big-number: 9999px;
+
+$page_w: 1000px;
+$page_w_max: 1400px;
+
+$font_main: 'Lato', Verdana, Arial, sans-serif;
+
+$content_bot_space: 10px;
+
+
+
+
+
+
+

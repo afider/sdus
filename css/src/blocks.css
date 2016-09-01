@@ -1,0 +1,88 @@
+/* svg-icons
+/* --------------------------------------------- */
+
+#svg-icons {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+	z-index: -100;
+}
+
+/* svg-icons
+/* ---------------------------------------END--- */
+
+
+/* page
+/* --------------------------------------------- */
+
+.page {
+	position: relative;
+	background: #fff;
+
+	&__header {
+
+	}
+
+	&__body{
+
+	}
+
+	&__sidebar {
+		width: 20%;
+		box-sizing: border-box;
+		padding-right: 20px;
+		margin-bottom: 30px;
+	}
+
+	&__mainbar {
+		width: 80%;
+		box-sizing: border-box;
+	}
+
+	&__footer {
+		position: relative;
+		//background: #f1acf2
+	}
+	
+}
+	
+	
+/* page
+/* ---------------------------------------END--- */
+
+
+/*  layout
+------------------------------------------------ */
+
+	.layout {
+		display: flex;
+		&__sidebar {
+			width: 240px;
+		}
+		&__mainbar {
+			width: auto;
+		}
+	}
+	
+/* layout
+------------------------------------------END--- */
+
+
+/*  header
+------------------------------------------------ */
+
+	.header {
+		color: #fff;
+		background: $main_color;
+		height: 80px;
+
+		&__body {
+			@mixin center;
+		}
+	}
+	
+/* header
+------------------------------------------END--- */
+
