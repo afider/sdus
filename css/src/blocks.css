@@ -19,31 +19,38 @@
 
 .page {
 	position: relative;
-	background: #fff;
+	min-width: $page_w;
 
 	&__header {
 
 	}
 
-	&__body{
-
+	&__body {
+		background: #fff;
 	}
 
-	&__sidebar {
-		width: 20%;
-		box-sizing: border-box;
-		padding-right: 20px;
-		margin-bottom: 30px;
-	}
+	&__content {
+		@mixin center;
 
-	&__mainbar {
-		width: 80%;
-		box-sizing: border-box;
+		&_spaced {
+			padding-left: $content_space;
+			padding-right: $content_space;
+		}
 	}
 
 	&__footer {
+		color: #fff;
 		position: relative;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		//background: #f1acf2
+
+		a {
+			color: #fff;
+			&:hover {
+				color: $link-color_hover;
+				}
+		}
 	}
 	
 }
@@ -53,20 +60,109 @@
 /* ---------------------------------------END--- */
 
 
+/*  footer-cols
+------------------------------------------------ */
+
+	.footer-cols {
+		margin-bottom: 50px;
+		display: flex;
+		&__i {
+			width: calc(100%/6);
+			//background: #000;
+			padding-right: 50px;
+		}
+	}
+	
+/* footer-cols
+------------------------------------------END--- */
+
+
 /*  layout
 ------------------------------------------------ */
 
 	.layout {
 		display: flex;
+		height: 100%;
 		&__sidebar {
-			width: 240px;
+			width: $sidebar_w;
+			background: #fff;
+			box-sizing: border-box;
+			padding-left: $content_space;
+			padding-right: $content_space;
+			padding-bottom: $bottom_space;
+			position: relative;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				width: $big-number;
+				background: #fff;
+				}
+
+			&_shadow {
+				position: relative;
+				&:before {
+					background: $color_sidebar;
+					box-shadow: inset -5px 5px 10px color(#000 alpha(8%));
+					}
+			}
+
+			&_main {
+				padding-top: 24px;
+			}
 		}
 		&__mainbar {
-			width: auto;
+			padding-left: 40px;
+			padding-right: $content_space;
+			padding-bottom: $bottom_space;
+			box-sizing: border-box;
+			//background: green;
+			width: calc(100% - $sidebar_w);
+
+			&_main {
+				padding-top: 24px;
+			}
+		}
+
+		&__sidebar-content {
+			position: relative;
+			z-index: 1;
 		}
 	}
 	
 /* layout
+------------------------------------------END--- */
+
+
+/*  logo
+------------------------------------------------ */
+
+	.logo {
+		position: absolute;
+		left: 0;
+		top: 10px;
+		color: $text_color !important;
+		width: 162px;
+		height: 62px;
+		display: flex;
+		align-items: center;
+		&__txt {
+			padding-left: 15px;
+		}
+		&__abbr {
+			color: $link-color !important;
+			transition: color $animation-time_slow;
+		}
+
+		&:hover &__abbr {
+			color: $link-color_hover !important;
+			}
+	}
+	
+/* logo
 ------------------------------------------END--- */
 
 
@@ -76,13 +172,150 @@
 	.header {
 		color: #fff;
 		background: $main_color;
-		height: 80px;
+		
 
 		&__body {
+			height: $header_h;
 			@mixin center;
+		}
+
+		a {
+			color: #fff;
+			&:hover {
+				color: $link-color_hover;
+				}
 		}
 	}
 	
 /* header
 ------------------------------------------END--- */
 
+
+/*  social
+------------------------------------------------ */
+
+	.social {
+		display: inline-block;
+		color: #b4dcf1 !important;
+		&:hover {
+			color: #fff !important;
+			}
+		&__icon {
+			
+			&_fb {
+				width: 22px;
+				height: 40px;
+			}
+			&_vk {
+				width: 46px;
+				height: 25px;
+			}
+		}
+		display: inline-block;
+	}
+	
+/* social
+------------------------------------------END--- */
+
+
+/*  graph-inf
+------------------------------------------------ */
+
+	.graph-inf {
+		box-shadow: 0 2px 18px color(#000 alpha(25%));
+		display: inline-block;
+		margin-bottom: 30px;
+
+		&__img {
+			display: block;
+		}
+	}
+	
+/* graph-inf
+------------------------------------------END--- */
+
+
+
+/*  header-inf
+------------------------------------------------ */
+
+	.header-inf {
+		height: $header_h;
+		//background: red;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		&__i {
+			padding-left: 20px;
+			text-align: right;
+		}
+	}
+	
+/* header-inf
+------------------------------------------END--- */
+
+
+/*  list-nav
+------------------------------------------------ */
+
+	.list-nav {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		
+		&__i {
+			margin: 0;
+			padding: 0;
+			
+		}
+
+		&__a {
+			display: block;
+			padding: 5px 0;
+		}
+	}
+	
+/* list-nav
+------------------------------------------END--- */
+
+
+/*  teasers
+------------------------------------------------ */
+
+	.teasers {
+		margin-bottom: 30px;
+		&__i {
+			display: flex;
+			margin-bottom: 20px;
+		}
+
+		&__photo {
+			width: 140px;
+
+		}
+
+		&__body {
+			box-sizing: border-box;
+			width: calc(100% - 140px);
+			padding-left: 20px;
+		}
+
+		&__img {
+			display: block;
+		}
+		
+		&__more-a,
+		&__h {
+			font-size: 18px;
+			font-weight: bold;
+			@extend font-h;
+		}
+
+		&__more {
+			text-align: center;
+		}
+
+	}
+	
+/* teasers
+------------------------------------------END--- */

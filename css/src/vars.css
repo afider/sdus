@@ -17,7 +17,7 @@ $color_sidebar: #f9f9f9;
 $shadow_color: #000;
 $placeholder_color: #545454;
 
-$text_color: #666;
+$text_color: #212121;
 $text_color_dark: #333;
 $text_color_light: #999;
 
@@ -43,9 +43,9 @@ $font_main: 'Lato', Verdana, Arial, sans-serif;
 
 $content_bot_space: 10px;
 
+$sidebar_w: 240px;
+$header_h: 80px;
+$bottom_space: 60px;
 
-
-
-
-
+$content_space: 20px;
 
