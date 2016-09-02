@@ -31,6 +31,7 @@
 
 	&__content {
 		@mixin center;
+		position: relative;
 
 		&_spaced {
 			padding-left: $content_space;
@@ -120,7 +121,8 @@
 			padding-bottom: $bottom_space;
 			box-sizing: border-box;
 			//background: green;
-			width: calc(100% - $sidebar_w);
+			width: 1%;
+			flex-grow: 1;
 
 			&_main {
 				padding-top: 24px;
@@ -318,4 +320,89 @@
 	}
 	
 /* teasers
+------------------------------------------END--- */
+
+/*  footer-inf
+------------------------------------------------ */
+
+	.footer-inf {
+		display: flex;
+		&__i {
+			box-sizing: border-box;
+			&_name {
+				width: 52%;
+				padding-right: 100px;
+			}
+			&_counters {
+				width: 16%;
+			}
+			&_made-by {
+				width: 32%;
+				text-align: right;
+				padding-right: 10%;
+			}
+		}
+	}
+	
+/* footer-inf
+------------------------------------------END--- */
+
+
+/*  search
+------------------------------------------------ */
+
+	.search {
+		$search_h: 40px;
+		
+		position: absolute;
+		left: 20px;
+		bottom: 100px;
+		display: inline-block;
+		&__input {
+			width: 240px;
+			border: 2px solid #fff;
+			height: $search_h;
+			box-sizing: border-box;
+			background: none;
+			@extend font-r;
+			padding: 0 46px 0 10px;
+			outline: none;
+			font-size: 14px;
+		}
+		&__button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: $search_h;
+			height: $search_h;
+			background: none;
+			border: none;
+			overflow: hidden;
+			text-indent: -999px;
+			margin: 0;
+			padding: 0;
+			z-index: 1;
+		}
+		&__icon {
+			width: 18px;
+			height: 18px;
+			position: absolute;
+			top: 11px;
+			right: 10px;
+			width: 18px;
+			height: 18px;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 9px;
+			right: 36px;
+			bottom: 9px;
+			width: 2px;
+			background: #4e87a6;
+			}
+	}
+	
+/* search
 ------------------------------------------END--- */
