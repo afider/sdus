@@ -399,7 +399,7 @@ body, .font-r, .search__input {
 	font-family: 'Lato',Verdana,Arial,sans-serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .font-h, .list-nav__i:first-child, .teasers__more-a, .teasers__h {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .font-h, .list-nav__i:first-child, .teasers__more-a, .teasers__h, .main-nav {
 	font-family: 'PT Sans', 'Lato',Verdana,Arial,sans-serif;
 }
 
@@ -1059,4 +1059,112 @@ input:-ms-input-placeholder {
 }
 	
 /* search
+------------------------------------------END--- */
+
+
+/*  main-nav
+------------------------------------------------ */
+
+	.main-nav {
+
+		margin: -14px 0 0 0;
+		padding: 0;
+		list-style-type: none
+	}
+
+	.main-nav__i {
+  margin: 0;
+  padding: 0;
+}
+
+	.main-nav__h {
+  position: relative;
+  display: inline-block;
+  padding-right: 36px;
+}
+
+	.main-nav__i_parent .main-nav__sub {
+  margin-top: -10px;
+}
+
+	.main-nav__a {
+  display: inline-block;
+  padding: 14px 0;
+  color: #212121;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+	.main-nav__a.is-active, .main-nav__a:hover {
+  color: #0288d1;
+}
+
+	.main-nav__sub {
+  position: relative;
+  z-index: 1;
+  display: none;
+  margin: 0 0 10px 10px;
+  padding: 0;
+  list-style-type: none;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+	.is-open > .main-nav__sub {
+  opacity: 1;
+}
+
+	.main-nav__sub-i {
+  margin: 0;
+  padding: 0;
+}
+
+	.main-nav__sub-a {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+	.main-nav__sub-a.is-active, .main-nav__sub-a:hover {
+  color: #0288d1;
+}
+
+	.main-nav__ctrl {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 53px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+	.main-nav__ctrl:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #007bff transparent transparent transparent;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+	.is-open .main-nav__ctrl:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+	
+/* main-nav
 ------------------------------------------END--- */
