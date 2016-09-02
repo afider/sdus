@@ -399,7 +399,7 @@ body, .font-r, .search__input {
 	font-family: 'Lato',Verdana,Arial,sans-serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .font-h, .teasers__more-a, .teasers__h {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .font-h, .list-nav__i:first-child, .teasers__more-a, .teasers__h {
 	font-family: 'PT Sans', 'Lato',Verdana,Arial,sans-serif;
 }
 
@@ -909,6 +909,12 @@ input:-ms-input-placeholder {
   padding: 0;
 }
 
+	.list-nav__i:first-child {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  font-weight: bold;
+}
+
 	.list-nav__a {
   display: block;
   padding: 5px 0;
@@ -1013,6 +1019,7 @@ input:-ms-input-placeholder {
   outline: none;
   font-size: 14px;
   font-size: 0.875rem;
+  color: #fff;
 }
 
 	.search__button {

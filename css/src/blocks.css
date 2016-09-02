@@ -268,7 +268,11 @@
 		&__i {
 			margin: 0;
 			padding: 0;
-			
+			&:first-child {
+				font-size: 17px;
+				font-weight: bold;
+				@extend font-h;
+				}
 		}
 
 		&__a {
@@ -368,6 +372,7 @@
 			padding: 0 46px 0 10px;
 			outline: none;
 			font-size: 14px;
+			color: #fff;
 		}
 		&__button {
 			position: absolute;
