@@ -227,6 +227,17 @@
 		box-shadow: 0 2px 18px color(#000 alpha(25%));
 		display: inline-block;
 		margin-bottom: 30px;
+		opacity: 1;
+		transition: opacity $animation-time_slow;
+
+		&:hover {
+			opacity: .8;
+			transition: opacity $animation-time_slow;
+			}
+
+		&_space_sm {
+			margin-bottom: 17px;
+		}
 
 		&__img {
 			display: block;
@@ -419,7 +430,7 @@
 	.main-nav {
 		$main-link-space: 14px;
 
-		margin: -$main-link-space 0 0 0;
+		margin: -$main-link-space 0 15px 0;
 		padding: 0;
 		list-style-type: none;
 		@extend font-h;
@@ -519,4 +530,17 @@
 	}
 	
 /* main-nav
+------------------------------------------END--- */
+
+
+/*  separator
+------------------------------------------------ */
+
+	.separator {
+		height: 1px;
+		background: #e0e0e0;
+		margin-bottom: 30px;
+	}
+	
+/* separator
 ------------------------------------------END--- */
