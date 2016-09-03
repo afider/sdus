@@ -519,7 +519,7 @@
 				height: 0;
 				border-style: solid;
 				border-width: 5px 5px 0 5px;
-				border-color: #007bff transparent transparent transparent;
+				border-color: $main_color transparent transparent transparent;
 				transition: transform $animation-time;
 
 				.is-open & {
@@ -544,3 +544,236 @@
 	
 /* separator
 ------------------------------------------END--- */
+
+
+/*  scrolled
+------------------------------------------------ */
+
+	.scrolled { 
+		height: auto;
+		width: auto;
+		max-width: 100%;
+		vertical-align: bottom;
+		margin-bottom: 45px;
+
+		&__lst {
+			overflow-y: hidden;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		&__i {
+			margin: 0 10px;
+			float: left;
+
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&__a {
+			display: block;
+		}
+		
+		&__img {
+			display: block;
+		}
+
+	}
+
+/* scrolled
+------------------------------------------END--- */
+
+
+
+
+
+
+/*  partners
+------------------------------------------------ */
+
+	.partners {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__i {
+			width: calc(100%/5);
+			margin-bottom: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__i:hover &__img {
+			filter: grayscale(0);
+		}
+
+		&__img {
+			transition: filter 1s;
+			display: block;
+			filter: grayscale(100%);
+		}
+
+
+	}
+	
+/* partners
+------------------------------------------END--- */
+
+
+/*  calendar
+------------------------------------------------ */
+
+	.calendar {
+		$day_dim: 28px;
+		margin-bottom: 40px;
+
+		&__day-names {
+			display: flex;
+			flex-wrap: wrap;
+			font-weight: bold;
+		}
+
+		&__day-name {
+			display: block;
+			width: $day_dim;
+			height: $day_dim;
+			line-height: $day_dim;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+		
+		&__days {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__day {
+			display: block;
+			width: $day_dim;
+			height: $day_dim;
+			line-height: $day_dim;
+			text-align: center;
+
+			&_prev,
+			&_next {
+				color: #b6b6b6;
+			}
+
+			&_has-event {
+				background: $link-color_hover;
+				color: #fff !important;
+				transition: background $animation-time_slow;
+
+				&:hover {
+					background: $main_color_light;
+					transition: background $animation-time_slow;
+					}
+			}
+
+			&_current {
+				color: $main_color;
+				font-weight: bold;
+			}
+		}
+	}
+	
+/* calendar
+------------------------------------------END--- */
+
+
+/*  select
+--------------------------------------------------- */
+	
+	.calendar .select {
+		width: auto;
+	}
+	.select {
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: middle;
+		width: 220px;
+		@extend font-r;
+
+
+		&__container {
+			position: relative;
+			display: inline-block;
+			margin-right: 3px;
+			}
+
+		&__item {
+			color: #000;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			display: inline-block;
+			width: 100%;
+			}
+
+		&__item &__bg {
+
+			.calendar & {
+				border: none;
+				text-transform: uppercase;
+				color: $main_color;
+				font-weight: bold;
+			}
+			display: block;
+			padding: 0 25px 0 7px;
+			line-height: 26px;
+			height: 26px;
+			border: 1px solid #dadada;
+			border-radius: 3px;
+			background: #fff;
+			font-size: 14px;
+
+			span {
+				display: block;
+				overflow: hidden;
+				height: 27px;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				}
+			}
+
+		&__arrow {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			margin-top: -2px;
+			width: 9px;
+			height: 5px;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 5px 0 5px;
+				border-color: $main_color transparent transparent transparent;
+				}
+			}
+	}
+	
+	select.replaced {
+		position: relative;
+		z-index: 1000;
+		height: 28px;
+		border: 0;
+		opacity: 0;
+		font-size: 14px;
+		@extend font-r;
+		}
+
+/*  select
+---------------------------------------------end--- */

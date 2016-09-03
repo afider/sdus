@@ -40,6 +40,8 @@ gulp.task('css', function () {
 		'./css/src/extends.css',
 		'./css/src/start.css',
 		'./css/src/blocks.css',
+		'./css/src/vendors/jquery.mCustomScrollbar.css',
+		'./css/src/vendors/magnific-popup.css',
 	])
 	.pipe(concat('common.css')).on('error', handleError)
 	.pipe(cached('css')).on('error', handleError)

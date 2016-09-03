@@ -8,6 +8,8 @@
 		<script src="js/svg.js"></script>
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.customselect.js"></script>
+		<script src="js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/common.js"></script>
 	</head>
 
@@ -117,7 +119,85 @@
 
 									<div class="separator"></div>
 
+
 									<h2>Календарь событий</h2>
+
+									<div class="calendar">
+										<div class="calendar__header">
+											<select name="month" id="month" class="js-select select">
+												<option value="1">Январь</option>
+												<option value="1" selected="selected">Февраль</option>
+												<option value="1">Март</option>
+												<option value="1">Апрель</option>
+												<option value="1">Май</option>
+												<option value="1">Июнь</option>
+												<option value="1">Июль</option>
+												<option value="1">Август</option>
+												<option value="1">Сентябрь</option>
+												<option value="1">Октябрь</option>
+												<option value="1">Ноябрь</option>
+												<option value="1">Декабрь</option>
+											</select>
+											
+											<select name="year" id="year" class="js-select select">
+												<option value="1">2015</option>
+												<option value="1">2016</option>
+												<option value="1" selected="selected">2017</option>
+											</select>
+										</div>
+
+										<div class="calendar__body">
+
+											<div class="calendar__day-names">
+												<div class="calendar__day-name">Пн</div>
+												<div class="calendar__day-name">Вт</div>
+												<div class="calendar__day-name">Ср</div>
+												<div class="calendar__day-name">Чт</div>
+												<div class="calendar__day-name">Пт</div>
+												<div class="calendar__day-name">Сб</div>
+												<div class="calendar__day-name">Вс</div>
+											</div>
+
+											<div class="calendar__days">
+												<div class="calendar__day calendar__day_prev">30</div>
+												<div class="calendar__day calendar__day_prev">31</div>
+												<div class="calendar__day">1</div>
+												<div class="calendar__day">2</div>
+												<div class="calendar__day">3</div>
+												<div class="calendar__day calendar__day_current">4</div>
+												<div class="calendar__day">5</div>
+												<div class="calendar__day">6</div>
+												<div class="calendar__day">7</div>
+												<div class="calendar__day">8</div>
+												<a href="#" class="calendar__day calendar__day_has-event">9</a>
+												<div class="calendar__day">10</div>
+												<div class="calendar__day">11</div>
+												<div class="calendar__day">12</div>
+												<div class="calendar__day">13</div>
+												<a href="#" class="calendar__day calendar__day_has-event">14</a>
+												<div class="calendar__day">15</div>
+												<div class="calendar__day">16</div>
+												<a href="#" class="calendar__day calendar__day_has-event">17</a>
+												<div class="calendar__day">18</div>
+												<div class="calendar__day">19</div>
+												<div class="calendar__day">20</div>
+												<a href="#" class="calendar__day calendar__day_has-event">21</a>
+												<a href="#" class="calendar__day calendar__day_has-event">22</a>
+												<div class="calendar__day">23</div>
+												<div class="calendar__day">24</div>
+												<div class="calendar__day">25</div>
+												<div class="calendar__day">26</div>
+												<a href="#" class="calendar__day calendar__day_has-event">27</a>
+												<div class="calendar__day">28</div>
+												<div class="calendar__day calendar__day_next">1</div>
+												<div class="calendar__day calendar__day_next">2</div>
+												<div class="calendar__day calendar__day_next">3</div>
+												<div class="calendar__day calendar__day_next">4</div>
+												<div class="calendar__day calendar__day_next">5</div>
+											</div>
+ 	
+										</div>
+									</div>
 
 									<a href="#" class="graph-inf graph-inf_space_sm">
 										<img src="img/banners/3d-map.jpg" height="80" width="220" alt="" class="graph-inf__img">
@@ -204,18 +284,95 @@
 								</div>
 
 								
-								 
+								 <h2>Фотогалерея</h2>
+
+								<div class="js-scroll scrolled">
+									<ul class="scrolled__lst js-img-zoom">
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-1.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-1.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-2.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-2.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-3.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-3.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-1.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-1.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-2.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-2.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-3.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-3.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-1.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-1.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-2.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-2.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+										<li class="scrolled__i">
+											<a href="img/teasers/gallery-3.jpg" class="scrolled__a js-img-zoom__target">
+												<img src="img/teasers/gallery-3.jpg" height="160" width="160" alt="" class="scrolled__img">
+											</a>
+										</li>
+									</ul>
+								</div>
 
 
+								<h2>Партнеры</h2>
 
 
-					<p>Эклиптика возможна. Комета Хейла-Боппа <b>меняет математический горизонт</b>, учитывая, что в одном парсеке 3,26 световых года. Ионный хвост однородно оценивает секстант.</p>
-					<p>Болид , несмотря на внешние воздействия, изменяем. Небесная сфера, после осторожного анализа, наблюдаема. Многие кометы имеют два хвоста, однако <a href="#">исполинская звездная</a> спираль с <b>поперечником в 50 кпк<i> многопланово выслеживает</i> экваториальный часовой</b> угол.</p>
-					<p>Расстояния планет от Солнца возрастают приблизительно в геометрической прогрессии (правило Тициуса — Боде): г = 0,4 + 0,3 · 2n (а.е.), где комета Хейла-Боппа отражает восход . Эфемерида жизненно оценивает эффективный диаметp. Звезда, сублимиpуя с повеpхности ядpа кометы, параллельна. Космический мусор изменяем. Газопылевое облако иллюстрирует первоначальный Каллисто. Эклиптика дает метеорит.</p>
+								<div class="partners">
+									<a href="#" class="partners__i">
+										<img src="img/partners/center-sport-prepearing.jpg" height="81" width="80" alt="" class="partners__img">
+									</a>
+									<a href="#" class="partners__i">
+										<img src="img/partners/olimp-comitet.jpg" height="94" width="56" alt="" class="partners__img">
+									</a>
+									<a href="#" class="partners__i">
+										<img src="img/partners/ekip-center.jpg" height="65" width="79" alt="" class="partners__img">
+									</a>
+									<a href="#" class="partners__i">
+										<img src="img/partners/flgr.jpg" height="67" width="79" alt="" class="partners__img">
+									</a>
+									<a href="#" class="partners__i">
+										<img src="img/partners/ekip-center.jpg" height="65" width="79" alt="" class="partners__img">
+									</a>
+									<a href="#" class="partners__i">
+										<img src="img/partners/flgr.jpg" height="67" width="79" alt="" class="partners__img">
+									</a>
+									<a href="#" class="partners__i">
+										<img src="img/partners/ekip-center.jpg" height="65" width="79" alt="" class="partners__img">
+									</a>
+									<a href="#" class="partners__i">
+										<img src="img/partners/olimp-comitet.jpg" height="94" width="56" alt="" class="partners__img">
+									</a>
+									<a href="#" class="partners__i">
+										<img src="img/partners/center-sport-prepearing.jpg" height="81" width="80" alt="" class="partners__img">
+									</a>
+								</div>
+
 							</div>
 						</div>
-					
-					
+						
 				
 				</div>
 			</div>

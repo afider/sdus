@@ -6,6 +6,7 @@ $animation-time_slow: .5s;
 /* colors --- START --- */
 
 $main_color: #0288d1;
+$main_color_light: #b3e5fc;
 $second_color: #fcc504;
 
 $focus_color: $second_color;
