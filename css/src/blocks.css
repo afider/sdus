@@ -724,6 +724,7 @@
 				text-transform: uppercase;
 				color: $main_color;
 				font-weight: bold;
+				background: none;
 			}
 			display: block;
 			padding: 0 25px 0 7px;

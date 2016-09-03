@@ -1409,6 +1409,7 @@ input:-ms-input-placeholder {
   text-transform: uppercase;
   color: #0288d1;
   font-weight: bold;
+  background: none;
 }
 	.select__item .select__bg span {
   display: block;
