@@ -395,7 +395,7 @@ td, th {
 
 
 
-body, .font-r, .search__input, .select, select.replaced, .folding__h {
+body, .font-r, .search__input, .select, select.replaced, .folding__h, .button {
 	font-family: 'Lato',Verdana,Arial,sans-serif;
 }
 
@@ -1714,7 +1714,8 @@ input:-ms-input-placeholder {
 ------------------------------------------------ */
 
 	.download-link {
-		display: inline-block
+		display: inline-block;
+		font-weight: bold
 		
 	}
 
@@ -1930,6 +1931,81 @@ input:-ms-input-placeholder {
 	
 /* persons
 ------------------------------------------END--- */
+
+
+/*  img-content
+------------------------------------------------ */
+
+	.img-content {
+		display: block;
+		margin-bottom: 24px;
+	}
+	
+/* img-content
+------------------------------------------END--- */
+
+
+/* button
+/* --------------------------------------------- */
+
+.button {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	position: relative;
+	display: inline-block;
+	overflow: visible;
+	border: none;
+	color: #0288d1 !important;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	vertical-align: middle;
+	outline: none;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 8px 25px;
+	background-color: #ebedee;
+	border: none;
+	box-sizing: border-box;
+	-webkit-transition: background .3s, color .3s;
+	transition: background .3s, color .3s;
+	-webkit-transition-timing-function: ease-out;
+	        transition-timing-function: ease-out
+}
+
+.button:hover {
+  background: #f5f6f6;
+  -webkit-transition: background .3s, color .3s;
+  transition: background .3s, color .3s;
+  color: #ff4081!important;
+}
+
+.button:active {
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.button_fluid {
+  width: 100%;
+}
+
+.button_disabled {
+  color: #666 !important;
+}
+
+.button_disabled:hover {
+  background-color: #ebedee !important;
+  color: #666 !important;
+}
+
+.button_disabled:active {
+  box-shadow: none;
+}
+
+/* button
+/* ---------------------------------------END--- */
 /*
 == malihu jquery custom scrollbar plugin ==
 Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller

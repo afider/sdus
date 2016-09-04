@@ -1023,6 +1023,7 @@
 
 	.download-link {
 		display: inline-block;
+		font-weight: bold;
 
 		&__icon {
 			width: 25px;
@@ -1226,3 +1227,71 @@
 	
 /* persons
 ------------------------------------------END--- */
+
+
+/*  img-content
+------------------------------------------------ */
+
+	.img-content {
+		display: block;
+		margin-bottom: 24px;
+	}
+	
+/* img-content
+------------------------------------------END--- */
+
+
+/* button
+/* --------------------------------------------- */
+
+.button {
+	@extend font-r;
+	user-select: none;
+	position: relative;
+	display: inline-block;
+	overflow: visible;
+	border: none;
+	color: $main_color !important;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	vertical-align: middle;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 8px 25px;
+	background-color: #ebedee;
+	border: none;
+	box-sizing: border-box;
+	transition: background $animation-time, color $animation-time;
+	transition-timing-function: ease-out;
+	
+	&:hover {
+		background: #f5f6f6;
+		transition: background $animation-time, color $animation-time;
+		color: $link-color_hover!important;
+	}
+
+	&:active {
+		box-shadow: inset 0px 3px 7px color(#000 alpha(20%));
+	}
+	
+	&_fluid {
+		width: 100%;
+	}
+	&_disabled {
+		color: $text_color_light !important;
+
+		&:hover {
+			background-color: #ebedee !important;
+			color: $text_color_light !important;
+		}
+
+		&:active {
+			box-shadow: none;
+		}
+	}
+}
+
+/* button
+/* ---------------------------------------END--- */
