@@ -1046,3 +1046,183 @@
 	
 /* attention
 ------------------------------------------END--- */
+
+/*  sub-h
+------------------------------------------------ */
+
+	.sub-h {
+		@extend font-h;
+		font-style: italic;
+		color: $text_color_light;
+		margin-top: -20px;
+		font-size: 16px;
+		margin-bottom: 24px;
+	}
+	
+/* sub-h
+------------------------------------------END--- */
+
+
+/*  headship
+------------------------------------------------ */
+
+	.headship {
+		@extend font-h;
+		margin-bottom: 34px;
+
+		&__h {
+			
+		}
+
+		&__body {
+			padding-left: 60px;
+		}
+
+		&__i {
+			margin-bottom: 16px;
+		}
+
+		&__post {
+			font-style: italic;
+			color: $text_color_light2;
+		}
+
+		&__person {
+			display: flex;
+			align-items: flex-end;
+			
+		}
+
+		&__name {
+			width: 1px;
+			flex-grow: 1;
+			font-size: 16px;
+			overflow: hidden;
+		}
+
+		&__dotted {
+			display: inline-block;
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: $page_w_max;
+				bottom: 1px;
+				right: 0;
+				left: 100%;
+				margin-left: 16px;
+				height: 1px;
+				background: url("../../img/dotted.gif") 0 0 repeat-x;
+			}
+		}
+
+		&__phone {
+			margin-top: -10px;
+			width: 100px;
+			white-space: nowrap;
+			font-size: 22px;
+			padding-left: 7px;
+			color: $main_color;
+		}
+	}
+	
+/* headship
+------------------------------------------END--- */
+
+
+/*  back
+------------------------------------------------ */
+
+	.back {
+		font-weight: bold;
+		font-size: 16px;
+		@extend font-h;
+	}
+	
+/* back
+------------------------------------------END--- */
+
+
+/*  persons
+------------------------------------------------ */
+
+	.persons {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -20px;
+		margin-bottom: 6px;
+
+		&__i {
+			width: 220px;
+			margin-left: 20px;
+			margin-bottom: 24px;
+		}
+
+		&__a {
+			display: block;
+			position: relative;
+			margin-bottom: 5px;
+		}
+
+		&__img {
+			display: block;
+		}
+
+		&__desc {
+			padding: 20px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			color: #fff;
+			font-style: italic;
+			display: flex;
+			align-items: center;
+			opacity: 0;
+			transition: opacity $animation-time_slow;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: $color_footer;
+				opacity: .9;
+				}
+		}
+
+		&__a:hover &__desc {
+			opacity: 1;
+
+			&:before {
+				
+				}
+		}
+
+		&__desc-txt {
+			position: relative;
+			z-index: 1;
+			text-align: center;
+		}
+
+		&__name {
+			font-size: 16px;
+			text-align: center;
+		}
+
+		&__post {
+			color: $text_color_light2;
+			text-align: center;
+			font-style: italic;
+		}
+
+
+	}
+	
+/* persons
+------------------------------------------END--- */

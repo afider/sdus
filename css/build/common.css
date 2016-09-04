@@ -399,7 +399,7 @@ body, .font-r, .search__input, .select, select.replaced, .folding__h {
 	font-family: 'Lato',Verdana,Arial,sans-serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .font-h, .list-nav__i:first-child, .teasers__more-a, .teasers__h, .main-nav, .media__tab-a, .page-nav {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .font-h, .list-nav__i:first-child, .teasers__more-a, .teasers__h, .main-nav, .media__tab-a, .page-nav, .sub-h, .headship, .back {
 	font-family: 'PT Sans', 'Lato',Verdana,Arial,sans-serif;
 }
 
@@ -1737,6 +1737,198 @@ input:-ms-input-placeholder {
 	}
 	
 /* attention
+------------------------------------------END--- */
+
+/*  sub-h
+------------------------------------------------ */
+
+	.sub-h {
+		font-style: italic;
+		color: #666;
+		margin-top: -20px;
+		font-size: 16px;
+		font-size: 1rem;
+		margin-bottom: 24px;
+	}
+	
+/* sub-h
+------------------------------------------END--- */
+
+
+/*  headship
+------------------------------------------------ */
+
+	.headship {
+		margin-bottom: 34px
+	}
+
+	.headship__h {}
+
+	.headship__body {
+  padding-left: 60px;
+}
+
+	.headship__i {
+  margin-bottom: 16px;
+}
+
+	.headship__post {
+  font-style: italic;
+  color: #999;
+}
+
+	.headship__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+	.headship__name {
+  width: 1px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 16px;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+	.headship__dotted {
+  display: inline-block;
+  position: relative;
+}
+
+	.headship__dotted:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1400px;
+  bottom: 1px;
+  right: 0;
+  left: 100%;
+  margin-left: 16px;
+  height: 1px;
+  background: url("../../img/dotted.gif") 0 0 repeat-x;
+}
+
+	.headship__phone {
+  margin-top: -10px;
+  width: 100px;
+  white-space: nowrap;
+  font-size: 22px;
+  font-size: 1.375rem;
+  padding-left: 7px;
+  color: #0288d1;
+}
+	
+/* headship
+------------------------------------------END--- */
+
+
+/*  back
+------------------------------------------------ */
+
+	.back {
+		font-weight: bold;
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	
+/* back
+------------------------------------------END--- */
+
+
+/*  persons
+------------------------------------------------ */
+
+	.persons {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		margin-left: -20px;
+		margin-bottom: 6px
+
+
+	}
+
+	.persons__i {
+  width: 220px;
+  margin-left: 20px;
+  margin-bottom: 24px;
+}
+
+	.persons__a {
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+	.persons__img {
+  display: block;
+}
+
+	.persons__desc {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+	.persons__desc:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #014366;
+  opacity: .9;
+}
+
+	.persons__a:hover .persons__desc {
+  opacity: 1;
+}
+
+	.persons__a:hover .persons__desc:before {}
+
+	.persons__desc-txt {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+	.persons__name {
+  font-size: 16px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+	.persons__post {
+  color: #999;
+  text-align: center;
+  font-style: italic;
+}
+	
+/* persons
 ------------------------------------------END--- */
 /*
 == malihu jquery custom scrollbar plugin ==

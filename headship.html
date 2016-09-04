@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="ru-RU">
+	<head> 
+		<meta charset="utf-8">
+		<title>МБОУ ДОД «СДЮСШОР»</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/build/common.css">
+		<script src="js/svg.js"></script>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.customselect.js"></script>
+		<script src="js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+
+	<body>
+		<div id="svg-icons"></div>
+
+		<div class="page">
+
+			<header class="page__header header">
+				<div class="header__body">
+
+					<div class="layout">
+						<div class="layout__sidebar">
+							<div class="layout__sidebar-content">
+								
+								<a href="#" class="logo">
+									<img src="img/logo.png" height="62" width="60" alt="" class="logo__img">
+									<div class="logo__txt">
+										<div class="logo__first">МБУ ДО</div>
+										<div class="logo__second">«<span class="logo__abbr">СДЮСШОР</span>»</div>
+									</div>
+								</a>
+
+							</div>
+						</div>
+						<div class="layout__mainbar">
+							
+							<div class="header-inf">
+								<div class="header-inf__i">
+									г. Ханты-Мансийск, ул. Калинина, д.1 <br>
+									<a href="mailto:sport-hm@mail.ru">sport-hm@mail.ru</a>
+								</div>
+								<div class="header-inf__i">
+									<a href="#fb" class="social">
+										<svg class=" social__icon social__icon_fb">
+											<use xlink:href="#fb"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="header-inf__i">
+									<a href="#fb" class="social">
+										<svg class=" social__icon social__icon_vk">
+											<use xlink:href="#vk"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</header>
+
+			<div class="page__body">
+				<div class="page__content">
+				
+					<div class="layout">
+							<div class="layout__sidebar layout__sidebar_main layout__sidebar_shadow">
+								<div class="layout__sidebar-content">
+
+									<ul class="main-nav js-nav">
+										<li class="main-nav__i">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a is-active">Главная</a>
+											</div>
+										</li>
+										<li class="main-nav__i main-nav__i_parent">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a">Новости и статьи</a>
+												<div class="main-nav__ctrl"></div>
+											</div>
+											<ul class="main-nav__sub">
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Новости</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Медицинский блог</a></li>
+											</ul>
+										</li>
+										<li class="main-nav__i"><a href="#" class="main-nav__a">Расписание</a></li>
+										<li class="main-nav__i"><a href="#" class="main-nav__a">Соревнования</a></li>
+										<li class="main-nav__i main-nav__i_parent is-open">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a">Информация</a>
+												<div class="main-nav__ctrl"></div>
+											</div>
+											<ul class="main-nav__sub" style="display: block;">
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">История школы</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Структура</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Образование</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Основные сведения</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Информация для зачисления</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Наши достижения</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Наши спортсмены</a></li>
+											</ul>
+										</li>
+										<li class="main-nav__i">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a">Медиа</a>
+											</div>
+										</li>
+										<li class="main-nav__i">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a">Контакты</a>
+											</div>
+										</li>
+									</ul>
+
+
+									<div class="separator"></div>
+
+
+									<h2>Календарь событий</h2>
+
+									<div class="calendar">
+										<div class="calendar__header">
+											<select name="month" id="month" class="js-select select">
+												<option value="1">Январь</option>
+												<option value="1" selected="selected">Февраль</option>
+												<option value="1">Март</option>
+												<option value="1">Апрель</option>
+												<option value="1">Май</option>
+												<option value="1">Июнь</option>
+												<option value="1">Июль</option>
+												<option value="1">Август</option>
+												<option value="1">Сентябрь</option>
+												<option value="1">Октябрь</option>
+												<option value="1">Ноябрь</option>
+												<option value="1">Декабрь</option>
+											</select>
+											
+											<select name="year" id="year" class="js-select select">
+												<option value="1">2015</option>
+												<option value="1">2016</option>
+												<option value="1" selected="selected">2017</option>
+											</select>
+										</div>
+
+										<div class="calendar__body">
+
+											<div class="calendar__day-names">
+												<div class="calendar__day-name">Пн</div>
+												<div class="calendar__day-name">Вт</div>
+												<div class="calendar__day-name">Ср</div>
+												<div class="calendar__day-name">Чт</div>
+												<div class="calendar__day-name">Пт</div>
+												<div class="calendar__day-name">Сб</div>
+												<div class="calendar__day-name">Вс</div>
+											</div>
+
+											<div class="calendar__days">
+												<div class="calendar__day calendar__day_prev">30</div>
+												<div class="calendar__day calendar__day_prev">31</div>
+												<div class="calendar__day">1</div>
+												<div class="calendar__day">2</div>
+												<div class="calendar__day">3</div>
+												<div class="calendar__day calendar__day_current">4</div>
+												<div class="calendar__day">5</div>
+												<div class="calendar__day">6</div>
+												<div class="calendar__day">7</div>
+												<div class="calendar__day">8</div>
+												<a href="#" class="calendar__day calendar__day_has-event">9</a>
+												<div class="calendar__day">10</div>
+												<div class="calendar__day">11</div>
+												<div class="calendar__day">12</div>
+												<div class="calendar__day">13</div>
+												<a href="#" class="calendar__day calendar__day_has-event">14</a>
+												<div class="calendar__day">15</div>
+												<div class="calendar__day">16</div>
+												<a href="#" class="calendar__day calendar__day_has-event">17</a>
+												<div class="calendar__day">18</div>
+												<div class="calendar__day">19</div>
+												<div class="calendar__day">20</div>
+												<a href="#" class="calendar__day calendar__day_has-event">21</a>
+												<a href="#" class="calendar__day calendar__day_has-event">22</a>
+												<div class="calendar__day">23</div>
+												<div class="calendar__day">24</div>
+												<div class="calendar__day">25</div>
+												<div class="calendar__day">26</div>
+												<a href="#" class="calendar__day calendar__day_has-event">27</a>
+												<div class="calendar__day">28</div>
+												<div class="calendar__day calendar__day_next">1</div>
+												<div class="calendar__day calendar__day_next">2</div>
+												<div class="calendar__day calendar__day_next">3</div>
+												<div class="calendar__day calendar__day_next">4</div>
+												<div class="calendar__day calendar__day_next">5</div>
+											</div>
+ 	
+										</div>
+									</div>
+
+									<a href="#" class="graph-inf graph-inf_space_sm">
+										<img src="img/banners/3d-map.jpg" height="80" width="220" alt="" class="graph-inf__img">
+									</a>
+
+									<a href="#" class="graph-inf graph-inf_space_sm">
+										<img src="img/banners/vk.jpg" height="80" width="220" alt="" class="graph-inf__img">
+									</a>
+
+									<a href="#" class="graph-inf graph-inf_space_sm">
+										<img src="img/banners/70-victory.jpg" height="80" width="220" alt="" class="graph-inf__img">
+									</a>
+
+									<a href="#" class="graph-inf graph-inf_space_sm">
+										<img src="img/banners/childhood.jpg" height="80" width="220" alt="" class="graph-inf__img">
+									</a>
+
+
+								</div>
+							</div>
+							<div class="layout__mainbar layout__mainbar_main">
+				
+								<h1>Руководство. Педагогический состав</h1>
+								<p class="sub-h">Руководство. Наши тренеры. Медицинский персонал.</p>
+								
+
+								<div class="headship">
+									<h2 class="headship__h">Руководство МБОУ ДОД «СДЮСШОР»</h2>
+									<div class="headship__body">
+										<div class="headship__i">
+											<div class="headship__post">Директор МБОУ ДОД «СДЮСШОР»</div>
+											<div class="headship__person">
+												<div class="headship__name">Савина Людмила Владимировна&nbsp;<div class="headship__dotted"></div></div>
+												<div class="headship__phone">33-20-84</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">Заместитель директора по учебно-воспитательной работе</div>
+											<div class="headship__person">
+												<div class="headship__name">Сезёмова Галина Георгиевна&nbsp;<div class="headship__dotted"></div></div>
+												<div class="headship__phone">33-05-64</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">Заведующая отделом учебно-воспитательной и спортивно-массовой работы</div>
+											<div class="headship__person">
+												<div class="headship__name">Кисиль Оксана Витальевна</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">Главный бухгалтер</div>
+											<div class="headship__person">
+												<div class="headship__name">Ворон-Ковалевская Ирина Анатольевна&nbsp;<div class="headship__dotted"></div></div>
+												<div class="headship__phone">33-21-24</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">Заведующая отделением  учебно-спортивной базы</div>
+											<div class="headship__person">
+												<div class="headship__name">Пантелеева Татьяна Александровна&nbsp;<div class="headship__dotted"></div></div>
+												<div class="headship__phone">33-02-88</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">Заведующий горнолыжным комплексом «Кедровый» и тюбинговой трассой</div>
+											<div class="headship__person">
+												<div class="headship__name">Фетисов Александр Васильевич&nbsp;<div class="headship__dotted"></div></div>
+												<div class="headship__phone">32-97-34</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">Заведующая крытым кортом (ул. Гагарина д. 101а)</div>
+											<div class="headship__person">
+												<div class="headship__name">Потапова Елена Викторовна&nbsp;<div class="headship__dotted"></div></div>
+												<div class="headship__phone">33-22-90</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="headship">
+									<h2 class="headship__h">Отдел учебно-воспитательной и спортивно-массовой работы МБОУ ДОД «СДЮСШОР»</h2>
+									<div class="headship__body">
+										
+										<div class="headship__i">
+											<div class="headship__post">старший инструктор-методист</div>
+											<div class="headship__person">
+												<div class="headship__name">Пьянкова Людмила Павловна </div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">инструктор-методист</div>
+											<div class="headship__person">
+												<div class="headship__name">Черин Андрей Алексеевич</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">инструктор-методист</div>
+											<div class="headship__person">
+												<div class="headship__name">Деомидова Евгения Владимировна</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								
+
+								<div class="persons">
+									<div class="persons__i">
+										<a href="#" class="persons__a">
+											<img src="img/teasers/person-1.jpg" height="300" width="220" alt="" class="persons__img">
+											<div class="persons__desc">
+												<div class="persons__desc-txt">
+													первая квалификационная категория по должности «тренер-преподаватель»
+													<br>
+													<br>
+													педагогический стаж – 26 лет
+												</div>
+											</div>
+										</a>
+										<div class="persons__name">Александрова Светлана Александровна</div>
+										<div class="persons__post">тренер-преподаватель по лыжным гонкам</div>
+									</div>
+									<div class="persons__i">
+										<a href="#" class="persons__a">
+											<img src="img/teasers/person-1.jpg" height="300" width="220" alt="" class="persons__img">
+											<div class="persons__desc">
+												<div class="persons__desc-txt">
+													первая квалификационная категория по должности «тренер-преподаватель»
+													<br>
+													<br>
+													педагогический стаж – 26 лет
+												</div>
+											</div>
+										</a>
+										<div class="persons__name">Александрова Светлана Александровна</div>
+										<div class="persons__post">тренер-преподаватель по лыжным гонкам</div>
+									</div>
+									<div class="persons__i">
+										<a href="#" class="persons__a">
+											<img src="img/teasers/person-2.jpg" height="300" width="220" alt="" class="persons__img">
+											<div class="persons__desc">
+												<div class="persons__desc-txt">
+													высшая квалификационная категория по должности «тренер-преподаватель»;
+													<br>
+													<br>
+													наличие почетных званий, наград: нагрудный знак «Почетный работник общего образования Российской Федерации» (2010 г.);
+													<br>
+													<br>
+
+													педагогический стаж – 22 года.
+												</div>
+											</div>
+										</a>
+										<div class="persons__name">Астраханцев Александр Сергеевич</div>
+										<div class="persons__post">тренер-преподаватель по лыжным гонкам</div>
+									</div>
+									<div class="persons__i">
+										<a href="#" class="persons__a">
+											<img src="img/teasers/person-3.jpg" height="300" width="220" alt="" class="persons__img">
+											<div class="persons__desc">
+												<div class="persons__desc-txt">
+													высшая квалификационная категория по должности «тренер-преподаватель»;
+													<br>
+													<br>
+													наличие почетных званий, наград: нагрудный знак «Почетный работник общего образования Российской Федерации» (2010 г.);
+													<br>
+													<br>
+
+													педагогический стаж – 22 года.
+												</div>
+											</div>
+										</a>
+										<div class="persons__name">Брисин Сергей Владимирович</div>
+										<div class="persons__post">тренер-преподаватель по лыжным гонкам</div>
+									</div>
+									<div class="persons__i">
+										<a href="#" class="persons__a">
+											<img src="img/teasers/person-4.jpg" height="300" width="220" alt="" class="persons__img">
+											<div class="persons__desc">
+												<div class="persons__desc-txt">
+													высшая квалификационная категория по должности «тренер-преподаватель»;
+													<br>
+													<br>
+													наличие почетных званий, наград: нагрудный знак «Почетный работник общего образования Российской Федерации» (2010 г.);
+													<br>
+													<br>
+
+													педагогический стаж – 22 года.
+												</div>
+											</div>
+										</a>
+										<div class="persons__name">Ветров Николай Иванович</div>
+										<div class="persons__post">тренер-преподаватель по лыжным гонкам</div>
+									</div>
+									<div class="persons__i">
+										<a href="#" class="persons__a">
+											<img src="img/teasers/person-4.jpg" height="300" width="220" alt="" class="persons__img">
+											<div class="persons__desc">
+												<div class="persons__desc-txt">
+													высшая квалификационная категория по должности «тренер-преподаватель»;
+													<br>
+													<br>
+													наличие почетных званий, наград: нагрудный знак «Почетный работник общего образования Российской Федерации» (2010 г.);
+													<br>
+													<br>
+
+													педагогический стаж – 22 года.
+												</div>
+											</div>
+										</a>
+										<div class="persons__name">Ветров Николай Иванович</div>
+										<div class="persons__post">тренер-преподаватель по лыжным гонкам</div>
+									</div>
+
+								</div>
+
+
+								<div class="headship">
+									<h2 class="headship__h">Медицинский персонал</h2>
+									<div class="headship__body">
+										
+										<div class="headship__i">
+											<div class="headship__post">врач-педиатр</div>
+											<div class="headship__person">
+												<div class="headship__name">Мельник Римма Борисовна</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">медицинская сестра</div>
+											<div class="headship__person">
+												<div class="headship__name">Шевченко Любовь Трофимовна</div>
+											</div>
+										</div>
+										<div class="headship__i">
+											<div class="headship__post">массажист</div>
+											<div class="headship__person">
+												<div class="headship__name">Русинова Татьяна Геннадьевна</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+
+
+								<div class="back"><a href="#" class="back__a">Вернуться к списку</a></div>
+							
+
+							</div>
+						</div>
+						
+				
+				</div>
+			</div>
+
+			<footer class="page__footer">
+
+				<div class="page__content page__content_spaced">
+					<div class="footer-cols">
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Новости и статьи</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Новости</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Медицинский блог</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Расписание</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Соревнования</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Результаты</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Информация</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">История школы</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Структура</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Образование</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Основные сведения</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Информация для зачисления</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Наши достижения</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Наши спортсмены</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Медиа</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Фото</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Видео</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">3D-Карта</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<form action="#search" class="search">
+						<input type="text" class="search__input">
+						<input type="submit" class="search__button">
+						<svg class="search__icon">
+							<use xlink:href="#search"></use>
+						</svg>
+					</form>
+
+					<div class="footer-inf">
+						<div class="footer-inf__i footer-inf__i_name">
+							Муниципальное бюджетное учреждение дополнительного образования «Специализированная детско-юношеская спортивная школа олимпийского резерва» г.&nbsp;Ханты-Мансийск
+						</div>
+						<div class="footer-inf__i footer-inf__i_counters">
+							<a href="#" class="counter">
+								<img src="img/counter-1.png" height="31" width="88" alt="">
+							</a>
+						</div>
+						<div class="footer-inf__i footer-inf__i_made-by">Разработка и поддержка — <br> <a href="#">Югорские Интернет Решения</a></div>
+					</div>
+
+				</div>
+
+			</footer>
+			
+		</div>
+	</body>
+
+</html>
