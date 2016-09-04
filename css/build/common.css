@@ -395,7 +395,7 @@ td, th {
 
 
 
-body, .font-r, .search__input, .select, select.replaced {
+body, .font-r, .search__input, .select, select.replaced, .folding__h {
 	font-family: 'Lato',Verdana,Arial,sans-serif;
 }
 
@@ -1645,6 +1645,98 @@ input:-ms-input-placeholder {
 }
 	
 /* page-nav
+------------------------------------------END--- */
+
+
+/*  folding
+------------------------------------------------ */
+
+	.folding {
+		margin-bottom: 20px
+	}
+
+	.folding__h {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+
+	.folding__h:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+  top: -3px;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #999 transparent transparent transparent;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  margin-left: 10px;
+}
+
+	.is-open .folding__h:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+	.folding__date {
+  display: inline-block;
+  padding-left: 6px;
+  font-weight: normal;
+  color: #999;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+	.folding__body {
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  display: none;
+}
+
+	.is-open > .folding__body {
+  opacity: 1;
+}
+	
+/* folding
+------------------------------------------END--- */
+
+
+/*  download-link
+------------------------------------------------ */
+
+	.download-link {
+		display: inline-block
+		
+	}
+
+	.download-link__icon {
+  width: 25px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+	
+/* download-link
+------------------------------------------END--- */
+
+
+/*  attention
+------------------------------------------------ */
+
+	.attention {
+		font-style: italic;
+	}
+	
+/* attention
 ------------------------------------------END--- */
 /*
 == malihu jquery custom scrollbar plugin ==

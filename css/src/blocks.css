@@ -960,3 +960,89 @@
 	
 /* page-nav
 ------------------------------------------END--- */
+
+
+/*  folding
+------------------------------------------------ */
+
+	.folding {
+		margin-bottom: 20px;
+
+		&__h {
+			font-size: 16px;
+			font-weight: bold;
+			@extend font-r;
+			cursor: pointer;
+			display: inline-block;
+
+			&:after {
+				content: '';
+				display: inline-block;
+				position: relative;
+				width: 0;
+				height: 0;
+				top: -3px;
+				border-style: solid;
+				border-width: 5px 5px 0 5px;
+				border-color: $text_color_light2 transparent transparent transparent;
+				transition: transform $animation-time;
+				margin-left: 10px;
+
+				.is-open & {
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		&__date {
+			display: inline-block;
+			padding-left: 6px;
+			font-weight: normal;
+			color: $text_color_light2;
+			font-size: 14px;
+		}
+		
+		&__body {
+			padding-top: 10px;
+			opacity: 0;
+			transition: opacity 0.3s;
+			display: none;
+
+			.is-open > & {
+				opacity: 1;
+			}
+		}
+	}
+	
+/* folding
+------------------------------------------END--- */
+
+
+/*  download-link
+------------------------------------------------ */
+
+	.download-link {
+		display: inline-block;
+
+		&__icon {
+			width: 25px;
+			height: 30px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+	}
+	
+/* download-link
+------------------------------------------END--- */
+
+
+/*  attention
+------------------------------------------------ */
+
+	.attention {
+		font-style: italic;
+	}
+	
+/* attention
+------------------------------------------END--- */

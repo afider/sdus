@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="ru-RU">
+	<head> 
+		<meta charset="utf-8">
+		<title>МБОУ ДОД «СДЮСШОР»</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/build/common.css">
+		<script src="js/svg.js"></script>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.customselect.js"></script>
+		<script src="js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+
+	<body>
+		<div id="svg-icons"></div>
+
+		<div class="page">
+
+			<header class="page__header header">
+				<div class="header__body">
+
+					<div class="layout">
+						<div class="layout__sidebar">
+							<div class="layout__sidebar-content">
+								
+								<a href="#" class="logo">
+									<img src="img/logo.png" height="62" width="60" alt="" class="logo__img">
+									<div class="logo__txt">
+										<div class="logo__first">МБУ ДО</div>
+										<div class="logo__second">«<span class="logo__abbr">СДЮСШОР</span>»</div>
+									</div>
+								</a>
+
+							</div>
+						</div>
+						<div class="layout__mainbar">
+							
+							<div class="header-inf">
+								<div class="header-inf__i">
+									г. Ханты-Мансийск, ул. Калинина, д.1 <br>
+									<a href="mailto:sport-hm@mail.ru">sport-hm@mail.ru</a>
+								</div>
+								<div class="header-inf__i">
+									<a href="#fb" class="social">
+										<svg class=" social__icon social__icon_fb">
+											<use xlink:href="#fb"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="header-inf__i">
+									<a href="#fb" class="social">
+										<svg class=" social__icon social__icon_vk">
+											<use xlink:href="#vk"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</header>
+
+			<div class="page__body">
+				<div class="page__content">
+				
+					<div class="layout">
+							<div class="layout__sidebar layout__sidebar_main layout__sidebar_shadow">
+								<div class="layout__sidebar-content">
+
+									<ul class="main-nav js-nav">
+										<li class="main-nav__i">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a is-active">Главная</a>
+											</div>
+										</li>
+										<li class="main-nav__i main-nav__i_parent">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a">Новости и статьи</a>
+												<div class="main-nav__ctrl"></div>
+											</div>
+											<ul class="main-nav__sub">
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Новости</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Медицинский блог</a></li>
+											</ul>
+										</li>
+										<li class="main-nav__i"><a href="#" class="main-nav__a">Расписание</a></li>
+										<li class="main-nav__i"><a href="#" class="main-nav__a">Соревнования</a></li>
+										<li class="main-nav__i main-nav__i_parent is-open">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a">Информация</a>
+												<div class="main-nav__ctrl"></div>
+											</div>
+											<ul class="main-nav__sub" style="display: block;">
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">История школы</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Структура</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Образование</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Основные сведения</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Информация для зачисления</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Наши достижения</a></li>
+												<li class="main-nav__sub-i"><a href="#" class="main-nav__sub-a">Наши спортсмены</a></li>
+											</ul>
+										</li>
+										<li class="main-nav__i">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a">Медиа</a>
+											</div>
+										</li>
+										<li class="main-nav__i">
+											<div class="main-nav__h">
+												<a href="#" class="main-nav__a">Контакты</a>
+											</div>
+										</li>
+									</ul>
+
+
+									<div class="separator"></div>
+
+
+									<h2>Календарь событий</h2>
+
+									<div class="calendar">
+										<div class="calendar__header">
+											<select name="month" id="month" class="js-select select">
+												<option value="1">Январь</option>
+												<option value="1" selected="selected">Февраль</option>
+												<option value="1">Март</option>
+												<option value="1">Апрель</option>
+												<option value="1">Май</option>
+												<option value="1">Июнь</option>
+												<option value="1">Июль</option>
+												<option value="1">Август</option>
+												<option value="1">Сентябрь</option>
+												<option value="1">Октябрь</option>
+												<option value="1">Ноябрь</option>
+												<option value="1">Декабрь</option>
+											</select>
+											
+											<select name="year" id="year" class="js-select select">
+												<option value="1">2015</option>
+												<option value="1">2016</option>
+												<option value="1" selected="selected">2017</option>
+											</select>
+										</div>
+
+										<div class="calendar__body">
+
+											<div class="calendar__day-names">
+												<div class="calendar__day-name">Пн</div>
+												<div class="calendar__day-name">Вт</div>
+												<div class="calendar__day-name">Ср</div>
+												<div class="calendar__day-name">Чт</div>
+												<div class="calendar__day-name">Пт</div>
+												<div class="calendar__day-name">Сб</div>
+												<div class="calendar__day-name">Вс</div>
+											</div>
+
+											<div class="calendar__days">
+												<div class="calendar__day calendar__day_prev">30</div>
+												<div class="calendar__day calendar__day_prev">31</div>
+												<div class="calendar__day">1</div>
+												<div class="calendar__day">2</div>
+												<div class="calendar__day">3</div>
+												<div class="calendar__day calendar__day_current">4</div>
+												<div class="calendar__day">5</div>
+												<div class="calendar__day">6</div>
+												<div class="calendar__day">7</div>
+												<div class="calendar__day">8</div>
+												<a href="#" class="calendar__day calendar__day_has-event">9</a>
+												<div class="calendar__day">10</div>
+												<div class="calendar__day">11</div>
+												<div class="calendar__day">12</div>
+												<div class="calendar__day">13</div>
+												<a href="#" class="calendar__day calendar__day_has-event">14</a>
+												<div class="calendar__day">15</div>
+												<div class="calendar__day">16</div>
+												<a href="#" class="calendar__day calendar__day_has-event">17</a>
+												<div class="calendar__day">18</div>
+												<div class="calendar__day">19</div>
+												<div class="calendar__day">20</div>
+												<a href="#" class="calendar__day calendar__day_has-event">21</a>
+												<a href="#" class="calendar__day calendar__day_has-event">22</a>
+												<div class="calendar__day">23</div>
+												<div class="calendar__day">24</div>
+												<div class="calendar__day">25</div>
+												<div class="calendar__day">26</div>
+												<a href="#" class="calendar__day calendar__day_has-event">27</a>
+												<div class="calendar__day">28</div>
+												<div class="calendar__day calendar__day_next">1</div>
+												<div class="calendar__day calendar__day_next">2</div>
+												<div class="calendar__day calendar__day_next">3</div>
+												<div class="calendar__day calendar__day_next">4</div>
+												<div class="calendar__day calendar__day_next">5</div>
+											</div>
+ 	
+										</div>
+									</div>
+
+									<a href="#" class="graph-inf graph-inf_space_sm">
+										<img src="img/banners/3d-map.jpg" height="80" width="220" alt="" class="graph-inf__img">
+									</a>
+
+									<a href="#" class="graph-inf graph-inf_space_sm">
+										<img src="img/banners/vk.jpg" height="80" width="220" alt="" class="graph-inf__img">
+									</a>
+
+									<a href="#" class="graph-inf graph-inf_space_sm">
+										<img src="img/banners/70-victory.jpg" height="80" width="220" alt="" class="graph-inf__img">
+									</a>
+
+									<a href="#" class="graph-inf graph-inf_space_sm">
+										<img src="img/banners/childhood.jpg" height="80" width="220" alt="" class="graph-inf__img">
+									</a>
+
+
+								</div>
+							</div>
+							<div class="layout__mainbar layout__mainbar_main">
+				
+								<h1>Результаты соревнований</h1>
+
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">Первенство по рыжероллерам  <span class="folding__date">22.10.2015</span></div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 
+											2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">Первенство по рыжероллерам  <span class="folding__date">22.10.2015</span></div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+								
+								<div class="folding js-folding is-open">
+
+									<div class="folding__h">Первенство по хоккею  <span class="folding__date">22.10.2015</span></div>
+									
+									<div class="folding__body" style="display: block;">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 
+											2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">Кубок города - VI этап <span class="folding__date">22.10.2015</span></div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">XII Спартакиада городов и районов <span class="folding__date">22.10.2015</span></div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">Памяти Дмитрия Токарева <span class="folding__date">22.10.2015</span></div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">На призы «Олимпийцев»</div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">Кубок города - V этап</div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">4 этап Кубка города </div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">Первенство и Спартакиада</div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+								<div class="folding js-folding">
+
+									<div class="folding__h">Этап №3</div>
+									
+									<div class="folding__body">
+										<p class="attention">Первенство Ханты-Мансийского автономного округа – Югры по хоккею с шайбой среди ДЮСШ в сезоне 2014-2015 гг. Возрастная категория: команды 2000 г.р.</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. I тур Первенства. 26-28 ноября 2014 г. Радужный
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. II тур Первенства. 11-15 февраля 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Таблица игр. III тур Первенства. 16-20 марта 2015 г. Когалым
+											</a>
+										</p>
+
+										<p>
+											<a href="#" class="download-link">
+												<svg class="download-link__icon">
+													<use xlink:href="#download"></use>
+												</svg>
+												Итоговая таблица
+											</a>
+										</p>
+									
+										
+									</div>
+								</div>
+
+								<div class="page-nav">
+									<ul class="page-nav__lst">
+										<li class="page-nav__i page-nav__i_prev">
+											<a href="#" class="page-nav__a">
+												 <svg class="page-nav__icon">
+													<use xlink:href="#left-arrow"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="page-nav__i is-active">
+											<a href="#" class="page-nav__a">
+												 1
+											</a>
+										</li>
+										<li class="page-nav__i">
+											<a href="#" class="page-nav__a">
+												 2
+											</a>
+										</li>
+										<li class="page-nav__i">
+											<a href="#" class="page-nav__a">
+												 3
+											</a>
+										</li>
+										<li class="page-nav__i">
+											<a href="#" class="page-nav__a">
+												 ...
+											</a>
+										</li>
+										<li class="page-nav__i">
+											<a href="#" class="page-nav__a">
+												 58
+											</a>
+										</li>
+										<li class="page-nav__i page-nav__i_next">
+											<a href="#" class="page-nav__a">
+												 <svg class="page-nav__icon">
+													<use xlink:href="#left-arrow"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						
+				
+				</div>
+			</div>
+
+			<footer class="page__footer">
+
+				<div class="page__content page__content_spaced">
+					<div class="footer-cols">
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Новости и статьи</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Новости</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Медицинский блог</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Расписание</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Соревнования</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Результаты</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Информация</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">История школы</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Структура</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Образование</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Основные сведения</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Информация для зачисления</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Наши достижения</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Наши спортсмены</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Медиа</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Фото</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Видео</a></li>
+								<li class="list-nav__i"><a href="#" class="list-nav__a">3D-Карта</a></li>
+							</ul>
+						</div>
+						<div class="footer-cols__i">
+							<ul class="list-nav">
+								<li class="list-nav__i"><a href="#" class="list-nav__a">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<form action="#search" class="search">
+						<input type="text" class="search__input">
+						<input type="submit" class="search__button">
+						<svg class="search__icon">
+							<use xlink:href="#search"></use>
+						</svg>
+					</form>
+
+					<div class="footer-inf">
+						<div class="footer-inf__i footer-inf__i_name">
+							Муниципальное бюджетное учреждение дополнительного образования «Специализированная детско-юношеская спортивная школа олимпийского резерва» г.&nbsp;Ханты-Мансийск
+						</div>
+						<div class="footer-inf__i footer-inf__i_counters">
+							<a href="#" class="counter">
+								<img src="img/counter-1.png" height="31" width="88" alt="">
+							</a>
+						</div>
+						<div class="footer-inf__i footer-inf__i_made-by">Разработка и поддержка — <br> <a href="#">Югорские Интернет Решения</a></div>
+					</div>
+
+				</div>
+
+			</footer>
+			
+		</div>
+	</body>
+
+</html>

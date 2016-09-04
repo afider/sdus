@@ -4,6 +4,7 @@ $(function() {
 	document.getElementById('svg-icons').innerHTML = SVG_SPRITE;
 
 	animateNavigation();
+	animateFolding();
 	initCustomSctoll();
 	initModalImg();
 	initCustomSelect();
@@ -25,6 +26,23 @@ function animateNavigation () {
 		});
 	});
 } // animateNavigation
+
+
+function animateFolding () {
+	
+	$('.js-folding .folding__h').each(function() {
+		
+		$(this).on('click', function() {
+			
+			if ( $(this).closest('.folding').hasClass('is-open') ) {
+
+				$(this).closest('.folding').removeClass('is-open').find('.folding__body').stop().slideUp('fast');
+			} else {
+				$(this).closest('.folding').addClass('is-open').find('.folding__body').stop().slideDown('fast');
+			}
+		});
+	});
+} // animateFolding
 
 
 function initCustomSelect () {
