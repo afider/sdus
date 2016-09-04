@@ -11,9 +11,10 @@ $second_color: #fcc504;
 
 $focus_color: $second_color;
 
-$color_imp: #ff684a;
+$color_imp: #ff0000;
 $color_footer: #014366;
 $color_sidebar: #f9f9f9;
+$color_focus: $main_color;
 
 $shadow_color: #000;
 $placeholder_color: #545454;

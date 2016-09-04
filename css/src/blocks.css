@@ -239,6 +239,10 @@
 			margin-bottom: 17px;
 		}
 
+		&_space-bottom_none {
+			margin-bottom: 0;
+		}
+
 		&__img {
 			display: block;
 		}
@@ -697,7 +701,7 @@
 		cursor: pointer;
 		display: inline-block;
 		vertical-align: middle;
-		width: 220px;
+		width: 380px;
 		@extend font-r;
 
 
@@ -725,20 +729,20 @@
 				color: $main_color;
 				font-weight: bold;
 				background: none;
+				padding: 0 15px 0 0;
 			}
 			display: block;
-			padding: 0 25px 0 7px;
-			line-height: 26px;
-			height: 26px;
-			border: 1px solid #dadada;
-			border-radius: 3px;
+			padding: 0 25px 0 10px;
+			line-height: 40px;
+			height: 40px;
+			border: 1px solid $text_color_light2;
 			background: #fff;
 			font-size: 14px;
 
 			span {
 				display: block;
 				overflow: hidden;
-				height: 27px;
+				height: 40px;
 				text-overflow: ellipsis;
 				white-space: nowrap;
 				}
@@ -769,12 +773,16 @@
 	select.replaced {
 		position: relative;
 		z-index: 1000;
-		height: 28px;
+		height: 40px;
 		border: 0;
 		opacity: 0;
 		font-size: 14px;
 		@extend font-r;
 		}
+
+	.calendar select.replaced {
+		height: 30px;
+	}
 
 /*  select
 ---------------------------------------------end--- */
@@ -1294,4 +1302,104 @@
 }
 
 /* button
+/* ---------------------------------------END--- */
+
+
+/* form-line
+/* --------------------------------------------- */
+
+.form-line {
+	margin-bottom: 20px;
+
+	&__label {
+		display: block;
+		margin-bottom: 3px;
+		font-style: italic;
+	}
+
+}
+
+/* form-line
+/* ---------------------------------------END--- */
+
+
+/*  required
+------------------------------------------------ */
+
+	.required {
+		color: $color_imp;
+	}
+	
+/* required
+------------------------------------------END--- */
+
+
+/* input
+/* --------------------------------------------- */
+
+textarea.input {
+	height: 80px;
+	padding: 10px;
+}
+
+.input {
+	width: 400px;
+	height: 40px;
+	background: #fff;
+	padding: 0 10px;
+	box-sizing: border-box;
+	transition: box-shadow $animation-time,  border-color $animation-time;
+	border: 1px solid $text_color_light2;
+
+	&_w_fluid {
+		width: 100%;
+	}
+
+	&_error{
+		border-color: $color_imp;
+	}
+
+	&:focus {
+		outline: 0 !important;
+		border-color: $color_main;
+		box-shadow: 0 0 4px $color_focus;
+		border-color: $color_main;
+	}
+}
+
+/* input
+/* ---------------------------------------END--- */
+
+
+
+/* table
+/* --------------------------------------------- */
+
+.table {
+	width: 100%;
+
+	
+	&__h td,
+	th {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: normal;
+
+	}
+
+	& th,
+	& td {
+		vertical-align: middle;
+		padding: 10px;
+		border: 1px solid #dfdfdf;
+
+
+	}
+
+	tr:nth-child(odd) {
+		   background-color: #f5f6f6;
+		}
+}
+
+/* table
 /* ---------------------------------------END--- */

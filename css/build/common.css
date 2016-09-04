@@ -461,6 +461,13 @@ h2, .h2 {
 	margin-bottom: 22px;
 }
 
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
 h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -872,6 +879,10 @@ input:-ms-input-placeholder {
 
 	.graph-inf_space_sm {
   margin-bottom: 17px;
+}
+
+	.graph-inf_space-bottom_none {
+  margin-bottom: 0;
 }
 
 	.graph-inf__img {
@@ -1376,7 +1387,7 @@ input:-ms-input-placeholder {
 		cursor: pointer;
 		display: inline-block;
 		vertical-align: middle;
-		width: 220px
+		width: 380px
 	}
 	.select__container {
   position: relative;
@@ -1394,12 +1405,11 @@ input:-ms-input-placeholder {
 }
 	.select__item .select__bg {
   display: block;
-  padding: 0 25px 0 7px;
-  line-height: 26px;
-  line-height: 1.625rem;
-  height: 26px;
-  border: 1px solid #dadada;
-  border-radius: 3px;
+  padding: 0 25px 0 10px;
+  line-height: 40px;
+  line-height: 2.5rem;
+  height: 40px;
+  border: 1px solid #999;
   background: #fff;
   font-size: 14px;
   font-size: 0.875rem;
@@ -1410,11 +1420,12 @@ input:-ms-input-placeholder {
   color: #0288d1;
   font-weight: bold;
   background: none;
+  padding: 0 15px 0 0;
 }
 	.select__item .select__bg span {
   display: block;
   overflow: hidden;
-  height: 27px;
+  height: 40px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -1442,12 +1453,16 @@ input:-ms-input-placeholder {
 	select.replaced {
 		position: relative;
 		z-index: 1000;
-		height: 28px;
+		height: 40px;
 		border: 0;
 		opacity: 0;
 		font-size: 14px;
 		font-size: 0.875rem;
 		}
+
+	.calendar select.replaced {
+		height: 30px;
+	}
 
 /*  select
 ---------------------------------------------end--- */
@@ -2005,6 +2020,101 @@ input:-ms-input-placeholder {
 }
 
 /* button
+/* ---------------------------------------END--- */
+
+
+/* form-line
+/* --------------------------------------------- */
+
+.form-line {
+	margin-bottom: 20px
+
+}
+
+.form-line__label {
+  display: block;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+/* form-line
+/* ---------------------------------------END--- */
+
+
+/*  required
+------------------------------------------------ */
+
+	.required {
+		color: #ff0000;
+	}
+	
+/* required
+------------------------------------------END--- */
+
+
+/* input
+/* --------------------------------------------- */
+
+textarea.input {
+	height: 80px;
+	padding: 10px;
+}
+
+.input {
+	width: 400px;
+	height: 40px;
+	background: #fff;
+	padding: 0 10px;
+	box-sizing: border-box;
+	-webkit-transition: box-shadow .3s,  border-color .3s;
+	transition: box-shadow .3s,  border-color .3s;
+	border: 1px solid #999
+}
+
+.input_w_fluid {
+  width: 100%;
+}
+
+.input_error {
+  border-color: #ff0000;
+}
+
+.input:focus {
+  outline: 0 !important;
+  border-color: $color_main;
+  box-shadow: 0 0 4px #0288d1;
+  border-color: $color_main;
+}
+
+/* input
+/* ---------------------------------------END--- */
+
+
+
+/* table
+/* --------------------------------------------- */
+
+.table {
+	width: 100%;
+}
+
+.table__h td, .table th {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #f5f6f6;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+}
+
+/* table
 /* ---------------------------------------END--- */
 /*
 == malihu jquery custom scrollbar plugin ==
