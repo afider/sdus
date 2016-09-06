@@ -235,6 +235,10 @@
 			transition: opacity $animation-time_slow;
 			}
 
+		&__center {
+			margin: auto;
+		}
+
 		&_space_sm {
 			margin-bottom: 17px;
 		}
@@ -1416,3 +1420,14 @@ textarea.input {
 
 /* table
 /* ---------------------------------------END--- */
+
+
+/*  txt-to-center
+------------------------------------------------ */
+
+	.txt-to-center {
+		text-align: center;
+	}
+	
+/* txt-to-center
+------------------------------------------END--- */

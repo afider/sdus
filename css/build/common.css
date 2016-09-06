@@ -877,6 +877,10 @@ input:-ms-input-placeholder {
   transition: opacity .5s;
 }
 
+	.graph-inf__center {
+  margin: auto;
+}
+
 	.graph-inf_space_sm {
   margin-bottom: 17px;
 }
@@ -2127,6 +2131,17 @@ textarea.input {
 
 /* table
 /* ---------------------------------------END--- */
+
+
+/*  txt-to-center
+------------------------------------------------ */
+
+	.txt-to-center {
+		text-align: center;
+	}
+	
+/* txt-to-center
+------------------------------------------END--- */
 /*
 == malihu jquery custom scrollbar plugin ==
 Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
