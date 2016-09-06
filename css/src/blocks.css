@@ -121,8 +121,8 @@
 			padding-bottom: $bottom_space;
 			box-sizing: border-box;
 			//background: green;
-			width: 1%;
-			flex-grow: 1;
+			width: 50%;
+			flex-grow: 2;
 
 			&_main {
 				padding-top: 24px;
@@ -432,6 +432,8 @@
 ------------------------------------------------ */
 
 	.main-nav {
+		position: relative;
+		background: $color_sidebar;
 		$main-link-space: 14px;
 
 		margin: -$main-link-space 0 15px 0;
@@ -696,6 +698,7 @@
 	
 	.calendar .select {
 		width: auto;
+
 	}
 	.select {
 		cursor: pointer;
@@ -730,6 +733,8 @@
 				font-weight: bold;
 				background: none;
 				padding: 0 15px 0 0;
+				background: $color_sidebar;
+				height: 30px;
 			}
 			display: block;
 			padding: 0 25px 0 10px;
@@ -745,7 +750,12 @@
 				height: 40px;
 				text-overflow: ellipsis;
 				white-space: nowrap;
+
+				.calendar & {
+					heihgt: 30px;
+					}
 				}
+			
 			}
 
 		&__arrow {
@@ -755,6 +765,9 @@
 			margin-top: -2px;
 			width: 9px;
 			height: 5px;
+			.calendar & {
+					margin-top: 0px;
+					}
 			&:before {
 				content: '';
 				display: block;
