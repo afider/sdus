@@ -1,3 +1,4 @@
+var enableMagnific = true;
 
 $(function() {
 
@@ -8,6 +9,27 @@ $(function() {
 	initCustomSctoll();
 	initModalImg();
 	initCustomSelect();
+
+
+	setTimeout(function() {
+
+		$('.js-carousel').flickity({
+			// options
+			cellAlign: 'left',
+			contain: true
+		});
+
+		$('.js-carousel').on( 'dragStart.flickity', function( event, pointer ) {
+			enableMagnific = false;
+		});
+
+		$('.js-carousel').on( 'dragEnd.flickity', function( event, pointer ) {
+			setTimeout(function() {
+				enableMagnific = true;
+			}, 100);
+		});
+
+	}, 0);
 
 });
 
@@ -82,10 +104,13 @@ $.extend(true, $.magnificPopup.defaults, {
 
 function initModalImg() {
 
+	
+
 	$('.js-img-zoom').magnificPopup({
 		gallery:{enabled:true},
 		delegate: '.js-img-zoom__target', // child items selector, by clicking on it popup will open
 		type: 'image',
+		disableOn: function() {return enableMagnific;},
 
 		image: {
 			titleSrc: function(item) {

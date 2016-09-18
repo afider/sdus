@@ -42,6 +42,7 @@ gulp.task('css', function () {
 		'./css/src/blocks.css',
 		'./css/src/vendors/jquery.mCustomScrollbar.css',
 		'./css/src/vendors/magnific-popup.css',
+		'./css/src/vendors/flickity.css',
 	])
 	.pipe(concat('common.css')).on('error', handleError)
 	.pipe(cached('css')).on('error', handleError)
